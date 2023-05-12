@@ -1,0 +1,911 @@
+global
+function math(context) {
+    return context.scopes.some(s => s.startsWith("meta.math")) && !context.scopes.some(s => s.startsWith("comment") || s.startsWith("meta.text.normal.tex"));
+}
+endglobal
+
+##############################################################################
+# Math mode
+##############################################################################
+snippet $$ "Inline math" A
+\$$0\$
+endsnippet
+
+snippet dm "Display math" A
+\begin{align}
+$0
+\end{align}
+endsnippet
+
+
+##############################################################################
+# Operations
+##############################################################################
+context math(context)
+snippet te "text"
+\text{$0}
+endsnippet
+
+context math(context)
+snippet text "text" Aw
+\text{$0}
+endsnippet
+
+context math(context)
+snippet bf "math bold" A
+\mathbf{$0}
+endsnippet
+
+context math(context)
+snippet sr "squared" Ai
+^{2}
+endsnippet
+
+context math(context)
+snippet cb "cubed" Ai
+^{3}
+endsnippet
+
+context math(context)
+snippet invs "inverse" Ai
+^{-1}
+endsnippet
+
+context math(context)
+snippet rd "superscript" Ai
+^{$1}$0
+endsnippet
+
+context math(context)
+snippet _ "subscript" Ai
+_{$1}$0
+endsnippet
+
+context math(context)
+snippet `([a-zA-Z])no` "subscript no" A
+``rv = m[1]``_{\text{0}}
+endsnippet
+
+context math(context)
+snippet sq "square root" A
+\sqrt{$1}$0
+endsnippet
+
+context math(context)
+snippet ee "exp (superscript)" A
+e^{ $1 }$0
+endsnippet
+
+context math(context)
+snippet rm "roman" A
+\mathrm{$1}$0
+endsnippet
+
+context math(context)
+snippet conj "conjugate" Ai
+^{*}
+endsnippet
+
+context math(context)
+snippet trace "trace" A
+\mathrm{Tr}
+endsnippet
+
+context math(context)
+snippet det "determinant" A
+\det
+endsnippet
+
+context math(context)
+snippet re "real part" A
+\mathrm{Re}
+endsnippet
+
+context math(context)
+snippet im "imaginary part" A
+\mathrm{Im}
+endsnippet
+
+context math(context)
+snippet `([a-zA-Z]),\.` "bold style" A
+\mathbf{``rv = m[1]``}
+endsnippet
+
+context math(context)
+snippet `([a-zA-Z])\.,` "bold style (alt)" A
+\mathbf{``rv = m[1]``}
+endsnippet
+
+context math(context)
+snippet `([a-zA-Z]),,` "slant bold style" A
+\boldsymbol{``rv = m[1]``}
+endsnippet
+
+context math(context)
+snippet bs "slant bold style" A
+\boldsymbol{$1}$0
+endsnippet
+
+context math(context)
+snippet `\b([a-zA-Z])(\d)` "sub number" A
+``rv = m[1]``_{``rv = m[2]``}
+endsnippet
+
+context math(context)
+snippet `([a-zA-Z])_(\d\d)` "sub two numbers" A
+``rv = m[1]``_{``rv = m[2]``}
+endsnippet
+
+context math(context)
+snippet `\\hat{([a-zA-Z])}(\d)` "hat with sub number" A
+\hat{``rv = m[1]``}_{``rv = m[2]``}
+endsnippet
+
+context math(context)
+snippet `\\mathbf{([a-zA-Z])}(\d)` "bold symbol with sub number" A
+\mathbf{``rv = m[1]``}_{``rv = m[2]``}
+endsnippet
+
+context math(context)
+snippet `\\vec{([a-zA-Z])}(\d)` "vec with sub number" A
+\vec{``rv = m[1]``}_{``rv = m[2]``}
+endsnippet
+
+context math(context)
+snippet `([a-zA-Z])bar` "add bar" A
+\bar{``rv = m[1]``}
+endsnippet
+
+context math(context)
+snippet `([^a-zA-Z])([a-zA-Z])hat` "add hat" A
+``rv = m[1]``\hat{``rv = m[2]``}
+endsnippet
+
+context math(context)
+snippet `([a-zA-Z])Hat` "add widehat" A
+\widehat{``rv = m[1]``}
+endsnippet
+
+context math(context)
+snippet `([a-zA-Z])ddot` "add ddot" A
+\ddot{``rv = m[1]``}
+endsnippet
+
+context math(context)
+snippet `([a-ce-zA-Z])dot` "add dot" A
+\dot{``rv = m[1]``}
+endsnippet
+
+context math(context)
+snippet `([a-zA-Z])vec` "vec" A
+\vec{``rv = m[1]``}
+endsnippet
+
+context math(context)
+snippet `([^a-zA-Z])([a-zA-Z])tilde` "add tilde" A
+``rv = m[1]``\tilde{``rv = m[2]``}
+endsnippet
+
+context math(context)
+snippet `([a-zA-Z])Tilde` "add widetilde" A
+\widetilde{``rv = m[1]``}
+endsnippet
+
+context math(context)
+snippet `([a-zA-Z])und` "add underline" A
+\underline{``rv = m[1]``}
+endsnippet
+
+context math(context)
+snippet bar "bar" A
+\bar{$1}$0
+endsnippet
+
+context math(context)
+snippet hat "hat" A
+\hat{$1}$0
+endsnippet
+
+context math(context)
+snippet dot "dot" A
+\dot{$1}$0
+endsnippet
+
+context math(context)
+snippet ddot "ddot" A
+\ddot{$1}$0
+endsnippet
+
+context math(context)
+snippet vec "vec" A
+\vec{$1}$0
+endsnippet
+
+context math(context)
+snippet tilde "tilde" A
+\tilde{$1}$0
+endsnippet
+
+context math(context)
+snippet und "und" A
+\underline{$1}$0
+endsnippet
+
+context math(context)
+snippet norm "norm" A
+\lVert $1 \rVert $0
+endsnippet
+
+context math(context)
+snippet abs "absolute value" A
+\lvert $1 \rvert $0
+endsnippet
+
+context math(context)
+snippet set "set" A
+\set{ $1 }$0
+endsnippet
+
+context math(context)
+snippet Set "large set" A
+\Set{ $1 }$0
+endsnippet
+
+
+##############################################################################
+# Symbols
+##############################################################################
+context math(context)
+snippet ooo "infinity" Aw
+\infty
+endsnippet
+
+context math(context)
+snippet sum "summation" A
+\sum
+endsnippet
+
+context math(context)
+snippet prod "production" A
+\prod
+endsnippet
+
+context math(context)
+snippet lim "limit" A
+\lim_{$1 \to $2}$0
+endsnippet
+
+context math(context)
+snippet lim "limit" A
+\lim_{$1 \to $2}$0
+endsnippet
+
+context math(context)
+snippet ... "dots" A
+\dots
+endsnippet
+
+context math(context)
+snippet <-> "left rigth arrow" A
+\leftrightarrow
+endsnippet
+
+context math(context)
+snippet <--> "long left rigth arrow" A
+\longleftrightarrow
+endsnippet
+
+context math(context)
+snippet <=> "Left rigth arrow" A
+\Leftrightarrow
+endsnippet
+
+context math(context)
+snippet <==> "Long left rigth arrow" A
+\Longleftrightarrow
+endsnippet
+
+context math(context)
+snippet -> "to" A
+\to
+endsnippet
+
+context math(context)
+snippet `<-([^->])` "get" A
+\get ``rv = m[1].trim()``
+endsnippet
+
+context math(context)
+snippet |> "mapsto" A
+\mapsto
+endsnippet
+
+context math(context)
+snippet \\\ "setminus" A
+\setminus
+endsnippet
+
+context math(context)
+snippet || "middle" A
+\mid
+endsnippet
+
+context math(context)
+snippet and "logical and" A
+\cap
+endsnippet
+
+context math(context)
+snippet orr "logical or" A
+\cup
+endsnippet
+
+context math(context)
+snippet inn "set in" A
+\in
+endsnippet
+
+context math(context)
+snippet `\\subset eq` "subseteq" A
+\subseteq
+endsnippet
+
+context math(context)
+snippet => "implies" A
+\implies
+endsnippet
+
+context math(context)
+snippet =< "impliedby" A
+\impliedby
+endsnippet
+
+context math(context)
+snippet iff "if and only if" A
+\iff
+endsnippet
+
+context math(context)
+snippet exists "exists" A
+\exists
+endsnippet
+
+context math(context)
+snippet === "equiv" A
+\equiv
+endsnippet
+
+context math(context)
+snippet := "colon eq" A
+\coloneq
+endsnippet
+
+context math(context)
+snippet =: "eq colon" A
+\eqcolon
+endsnippet
+
+context math(context)
+snippet Sq "square" A
+\square
+endsnippet
+
+context math(context)
+snippet != "not eq" A
+\neq
+endsnippet
+
+context math(context)
+snippet `>=(.)` "greater than or equal to" A
+\geq ``rv = m[1].trim()``
+endsnippet
+
+context math(context)
+snippet `<=([^=])` "less than or equal to" A
+\leq ``rv = m[1].trim()``
+endsnippet
+
+context math(context)
+snippet >> "much greater than" A
+\gg
+endsnippet
+
+context math(context)
+snippet << "much less than" A
+\ll
+endsnippet
+
+context math(context)
+snippet ~~ "similar" A
+\sim
+endsnippet
+
+context math(context)
+snippet \sim~ "approx" A
+\approx
+endsnippet
+
+context math(context)
+snippet prop "propotional to" A
+\propto
+endsnippet
+
+context math(context)
+snippet nabl "nabla" A
+\nabla
+endsnippet
+
+context math(context)
+snippet del "nabla" A
+\nabla
+endsnippet
+
+context math(context)
+snippet xx "times" A
+\times
+endsnippet
+
+context math(context)
+snippet ** "cdot" A
+\cdot
+endsnippet
+
+context math(context)
+snippet para "parallel" A
+\parallel
+endsnippet
+
+context math(context)
+snippet xnn "x sub n" A
+x_{n}
+endsnippet
+
+context math(context)
+snippet xii "x sub i" A
+x_{i}
+endsnippet
+
+context math(context)
+snippet xjj "x sub j" A
+x_{j}
+endsnippet
+
+context math(context)
+snippet xp1 "x sub n + 1" A
+x_{n+1}
+endsnippet
+
+context math(context)
+snippet ynn "y sub n" A
+y_{n}
+endsnippet
+
+context math(context)
+snippet yii "y sub i" A
+y_{i}
+endsnippet
+
+context math(context)
+snippet yjj "y sub j" A
+y_{j}
+endsnippet
+
+context math(context)
+snippet mcal "mathcal" A
+\mathcal{$1}$0
+endsnippet
+
+context math(context)
+snippet mbb "mathbb" A
+\mathbb{$1}$0
+endsnippet
+
+context math(context)
+snippet ell "ell" A
+\ell
+endsnippet
+
+context math(context)
+snippet lll "ell" A
+\ell
+endsnippet
+
+context math(context)
+snippet LL "Calligraphy L" A
+\mathcal{L}
+endsnippet
+
+context math(context)
+snippet HH "Calligraphy H" A
+\mathcal{H}
+endsnippet
+
+context math(context)
+snippet CC "Complex field" A
+\mathbb{C}
+endsnippet
+
+context math(context)
+snippet RR "Real field" A
+\mathbb{R}
+endsnippet
+
+context math(context)
+snippet ZZ "Integer group" A
+\mathbb{Z}
+endsnippet
+
+context math(context)
+snippet NN "Natural number group" A
+\mathbb{N}
+endsnippet
+
+context math(context)
+snippet II "Unit" A
+\mathbb{1}
+endsnippet
+
+context math(context)
+snippet \mathbb{1}I "Unit (alt)" A
+\hat{\mathbb{1}}
+endsnippet
+
+context math(context)
+snippet AA "Calligraphy A" A
+\mathcal{A}
+endsnippet
+
+context math(context)
+snippet BB "bold B" A
+\mathbf{B}
+endsnippet
+
+context math(context)
+snippet EE "bold E" A
+\mathbf{E}
+endsnippet
+
+##############################################################################
+# Unit vectors
+##############################################################################
+context math(context)
+snippet :i "i-th unit vector" A
+\mathbf{i}
+endsnippet
+
+context math(context)
+snippet :j "j-th unit vector" A
+\mathbf{j}
+endsnippet
+
+context math(context)
+snippet :k "k-th unit vector" A
+\mathbf{k}
+endsnippet
+
+context math(context)
+snippet :x "x unit" A
+\hat{\mathbf{x}}
+endsnippet
+
+context math(context)
+snippet :y "y unit" A
+\hat{\mathbf{y}}
+endsnippet
+
+context math(context)
+snippet :z "z unit" A
+\hat{\mathbf{z}}
+endsnippet
+
+##############################################################################
+# Derivatives
+##############################################################################
+context math(context)
+snippet par "partial derivative"
+\frac{\partial $1}{\partial $2}$0
+endsnippet
+
+context math(context)
+snippet pa2 "second partial derivative" A
+\frac{\partial^{2} $1}{\partial $2^{2}}$0
+endsnippet
+
+context math(context)
+snippet pa3 "third partial derivative" A
+\frac{\partial^{3} $1}{\partial $2^{3}}$0
+endsnippet
+
+context math(context)
+snippet `pa([a-zA-Z])([a-zA-Z])` "regex partial derivative"
+\frac{\partial ``rv = m[1]``}{\partial ``rv = m[2]``}
+endsnippet
+
+context math(context)
+snippet `pa([a-zA-Z])([a-zA-Z])([a-zA-Z])` "regex partial derivative two vars"
+\frac{\partial^{2} ``rv = m[1]``}{\partial ``rv = m[2]`` \partial ``rv = m[3]``}
+endsnippet
+
+context math(context)
+snippet `pa([a-zA-Z])([a-zA-Z])2` "regex second partial derivative" A
+\frac{\partial^{2} ``rv = m[1]``}{\partial ``rv = m[2]``^{2}}
+endsnippet
+
+context math(context)
+snippet `de([a-zA-Z])([a-zA-Z])` "regex derivative"
+\frac{d ``rv = m[1]``}{d ``rv = m[2]``}
+endsnippet
+
+context math(context)
+snippet `de([a-zA-Z])([a-zA-Z])2` "regex second derivative" A
+\frac{d^{2} ``rv = m[1]``}{d ``rv = m[2]``^{2}}
+endsnippet
+
+context math(context)
+snippet ddt "time differential operator" A
+\frac{d}{dt}
+endsnippet
+
+context math(context)
+snippet ddx "differential operator" A
+\frac{d}{dx}
+endsnippet
+
+##############################################################################
+# Integrals
+##############################################################################
+context math(context)
+snippet oinf "half improper integral" A
+\int_{0}^{\infty} $1 \, d$2
+endsnippet
+
+context math(context)
+snippet infi "improper integral" A
+\int_{-\infty}^{\infty} $1 \, d$2
+endsnippet
+
+context math(context)
+snippet dint "definite integral" A
+\int_{$1}^{$2} $3 \, d$4
+endsnippet
+
+context math(context)
+snippet oint "closed loop integral" A
+\oint
+endsnippet
+
+context math(context)
+snippet iiint "3-fold integral" A
+\iiint
+endsnippet
+
+context math(context)
+snippet iint "2-fold integral" A
+\iint
+endsnippet
+
+context math(context)
+snippet int "indefinite integral" A
+\int $1 \, d$2
+endsnippet
+
+##############################################################################
+# Physics
+##############################################################################
+context math(context)
+snippet kbt "temperature multiplied by the boltzmann constant" A
+k_{\text{B}}T
+endsnippet
+
+context math(context)
+snippet hbar "hbar" A
+\hbar
+endsnippet
+
+context math(context)
+snippet dag "dagger" Ai
+^{\dagger}
+endsnippet
+
+context math(context)
+snippet o+ "direct sum" A
+\oplus
+endsnippet
+
+context math(context)
+snippet O+ "big direct sum" A
+\bigoplus
+endsnippet
+
+context math(context)
+snippet ox "direct product" A
+\otimes
+endsnippet
+
+context math(context)
+snippet otimes "direct product (alt)" A
+\otimes
+endsnippet
+
+context math(context)
+snippet Ox "big direct product" A
+\bigotimes
+endsnippet
+
+context math(context)
+snippet bra "bra vector" A
+\bra{$1}$0
+endsnippet
+
+context math(context)
+snippet ket "ket vector" A
+\ket{$1}$0
+endsnippet
+
+context math(context)
+snippet brk "braket" A
+\braket{$1}$0
+endsnippet
+
+context math(context)
+snippet `\\bra{([^|]+)\|` "bra to braket" A
+\braket{``rv = m[1]`` | $0
+endsnippet
+
+context math(context)
+snippet outp "outer product" A
+\ket{$1}\!\bra{$1}$0
+endsnippet
+
+context math(context)
+snippet Bra "large bra vector" A
+\Bra{$1}$0
+endsnippet
+
+context math(context)
+snippet Ket "large ket vector" A
+\Ket{$1}$0
+endsnippet
+
+context math(context)
+snippet Brk "large braket" A
+\Braket{$1}$0
+endsnippet
+
+context math(context)
+snippet `\\Bra{([^|]+)\|` "large bra to large braket" A
+\Braket{``rv = m[1]`` | $0
+endsnippet
+
+context math(context)
+snippet Outp "large outer product" A
+\Ket{$1}\!\Bra{$1}$0
+endsnippet
+
+# context math(context)
+# snippet Ope "large operator" A
+# \Ket{$1\vphantom{$2}}\!\Bra{$2\vphantom{$1}}$0
+# endsnippet
+
+
+##############################################################################
+# Environments
+##############################################################################
+context math(context)
+snippet beg "environment" A
+\begin{$1}
+$0
+\end{$1}
+endsnippet
+
+# context math(context)
+# snippet pmat "parentheses matrix" A
+# \begin{pmatrix}
+# $1
+# \end{pmatrix}$0
+# endsnippet
+# context math(context)
+# snippet bmat "bracket matrix" A
+# \begin{bmatrix}
+# $1
+# \end{bmatrix}$0
+# endsnippet
+# context math(context)
+# snippet Bmat "brace matrix" A
+# \begin{Bmatrix}
+# $1
+# \end{Bmatrix}$0
+# endsnippet
+# context math(context)
+# snippet vmat "vartical line matrix" A
+# \begin{vmatrix}
+# $1
+# \end{vmatrix}$0
+# endsnippet
+# context math(context)
+# snippet Vmat "double vartical line matrix" A
+# \begin{Vmatrix}
+# $1
+# \end{Vmatrix}$0
+# endsnippet
+# context math(context)
+# snippet case "cases" A
+# \begin{cases}
+# $1
+# \end{cases}$0
+# endsnippet
+# context math(context)
+# snippet array "array" A
+# \begin{array}
+# $1
+# \end{array}$0
+# endsnippet
+# context math(context)
+# snippet matrix "matrix" A
+# \begin{matrix}
+# $1
+# \end{matrix}$0
+# endsnippet
+
+
+##############################################################################
+# Brackets
+##############################################################################
+snippet avg "average" A
+\langle $1 \rangle $0
+endsnippet
+
+snippet mod "mod" A
+| $1 |$0
+endsnippet
+
+snippet lr() "large paremtheses" A
+\left( $0 \right)
+endsnippet
+
+snippet lr| "large paremtheses" A
+\left| $0 \right|
+endsnippet
+
+snippet lr{} "large paremtheses" A
+\left{ $0 \right}
+endsnippet
+
+snippet lr[] "large paremtheses" A
+\left[ $0 \right]
+endsnippet
+
+snippet lra "large paremtheses" A
+\left< $0 \right>
+endsnippet
+
+
+##############################################################################
+# Fraction
+##############################################################################
+context math(context)
+snippet // "Fraction simple" A
+\frac{$1}{$2}$0
+endsnippet
+
+context math(context)
+snippet `((\d+)|(\d*)(\\)?([A-Za-z]+)((\^|_)(\{\d+\}|\d))*)/` "Fraction no ()" A
+\frac{``rv = m[1]``}{$1}$0
+endsnippet
+
+context math(context)
+snippet `^.*\)/` "() Fraction" A
+``
+let stripped = m[0].substring(0, m[0].length - 1);
+let depth = 0;
+let i = stripped.length - 1;
+while (i >= 0) {
+	if (stripped[i] == ')') depth += 1;
+	if (stripped[i] == '(') depth -= 1
+	if (depth == 0) break;
+    i -= 1
+}
+rv = `${stripped.substring(0, i)}\\frac{${stripped.substring(i + 1, stripped.length - 1)}}`;
+``{$1}$0
+endsnippet
+
