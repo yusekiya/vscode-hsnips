@@ -82,6 +82,11 @@ snippet rm "roman" A
 endsnippet
 
 context math(context)
+snippet trans "transpose" Ai
+^\top
+endsnippet
+
+context math(context)
 snippet conj "conjugate" Ai
 ^{*}
 endsnippet
