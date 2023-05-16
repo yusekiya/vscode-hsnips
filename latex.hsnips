@@ -157,7 +157,7 @@ snippet `\\vec{([a-zA-Z])}(\d)` "vec with sub number" A
 endsnippet
 
 context math(context)
-snippet `([a-zA-Z])bar` "add bar" A
+snippet `([a-gi-zA-Z])bar` "add bar" A
 \bar{``rv = m[1]``}
 endsnippet
 
