@@ -88,7 +88,7 @@ endsnippet
 
 context math(context)
 snippet conj "conjugate" Ai
-^{*}
+^*
 endsnippet
 
 context math(context)
@@ -613,12 +613,12 @@ endsnippet
 
 context math(context)
 snippet pa2 "second partial derivative" A
-\frac{\partial^{2} $1}{\partial $2^{2}}$0
+\frac{\partial^2 $1}{\partial $2^2}$0
 endsnippet
 
 context math(context)
 snippet pa3 "third partial derivative" A
-\frac{\partial^{3} $1}{\partial $2^{3}}$0
+\frac{\partial^3 $1}{\partial $2^3}$0
 endsnippet
 
 context math(context)
@@ -628,12 +628,12 @@ endsnippet
 
 context math(context)
 snippet `pa([a-zA-Z])([a-zA-Z])([a-zA-Z])` "regex partial derivative two vars"
-\frac{\partial^{2} ``rv = m[1]``}{\partial ``rv = m[2]`` \partial ``rv = m[3]``}
+\frac{\partial^2 ``rv = m[1]``}{\partial ``rv = m[2]`` \partial ``rv = m[3]``}
 endsnippet
 
 context math(context)
 snippet `pa([a-zA-Z])([a-zA-Z])2` "regex second partial derivative" A
-\frac{\partial^{2} ``rv = m[1]``}{\partial ``rv = m[2]``^{2}}
+\frac{\partial^2 ``rv = m[1]``}{\partial ``rv = m[2]``^2}
 endsnippet
 
 context math(context)
@@ -643,7 +643,7 @@ endsnippet
 
 context math(context)
 snippet `de([a-zA-Z])([a-zA-Z])2` "regex second derivative" A
-\frac{d^{2} ``rv = m[1]``}{d ``rv = m[2]``^{2}}
+\frac{d^2 ``rv = m[1]``}{d ``rv = m[2]``^2}
 endsnippet
 
 context math(context)
@@ -709,7 +709,7 @@ endsnippet
 
 context math(context)
 snippet dag "dagger" Ai
-^{\dagger}
+^\dagger
 endsnippet
 
 context math(context)
