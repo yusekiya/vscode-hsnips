@@ -312,7 +312,7 @@ endsnippet
 
 context math(context)
 snippet `<-([^->])` "get" A
-\get ``rv = m[1].trim()``
+\gets ``rv = m[1].trim()``
 endsnippet
 
 context math(context)
