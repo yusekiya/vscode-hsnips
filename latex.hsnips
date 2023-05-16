@@ -162,8 +162,8 @@ snippet `([a-zA-Z])bar` "add bar" A
 endsnippet
 
 context math(context)
-snippet `([^a-zA-Z])([a-zA-Z])hat` "add hat" A
-``rv = m[1]``\hat{``rv = m[2]``}
+snippet `([a-zA-Z])hat` "add hat" A
+\hat{``rv = m[1]``}
 endsnippet
 
 context math(context)
@@ -187,8 +187,8 @@ snippet `([a-zA-Z])vec` "vec" A
 endsnippet
 
 context math(context)
-snippet `([^a-zA-Z])([a-zA-Z])tilde` "add tilde" A
-``rv = m[1]``\tilde{``rv = m[2]``}
+snippet `([a-zA-Z])tilde` "add tilde" A
+\tilde{``rv = m[1]``}
 endsnippet
 
 context math(context)
