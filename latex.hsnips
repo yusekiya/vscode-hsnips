@@ -167,11 +167,6 @@ snippet `([a-zA-Z])hat` "add hat" A
 endsnippet
 
 context math(context)
-snippet `([a-zA-Z])Hat` "add widehat" A
-\widehat{``rv = m[1]``}
-endsnippet
-
-context math(context)
 snippet `([a-zA-Z])ddot` "add ddot" A
 \ddot{``rv = m[1]``}
 endsnippet
@@ -192,11 +187,6 @@ snippet `([a-zA-Z])tilde` "add tilde" A
 endsnippet
 
 context math(context)
-snippet `([a-zA-Z])Tilde` "add widetilde" A
-\widetilde{``rv = m[1]``}
-endsnippet
-
-context math(context)
 snippet `([a-zA-Z])und` "add underline" A
 \underline{``rv = m[1]``}
 endsnippet
@@ -209,6 +199,11 @@ endsnippet
 context math(context)
 snippet hat "hat" A
 \hat{$1}$0
+endsnippet
+
+context math(context)
+snippet Hat "wide hat" A
+\widehat{$1}$0
 endsnippet
 
 context math(context)
@@ -229,6 +224,11 @@ endsnippet
 context math(context)
 snippet tilde "tilde" A
 \tilde{$1}$0
+endsnippet
+
+context math(context)
+snippet Tilde "wide tilde" A
+\widetilde{$1}$0
 endsnippet
 
 context math(context)
