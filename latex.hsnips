@@ -93,7 +93,7 @@ endsnippet
 
 context math(context)
 snippet trace "trace" A
-\mathrm{Tr}
+\mathrm{Tr}\,
 endsnippet
 
 context math(context)
