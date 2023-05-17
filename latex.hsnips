@@ -371,6 +371,11 @@ snippet exists "exists" A
 endsnippet
 
 context math(context)
+snippet forall "for all" A
+\forall
+endsnippet
+
+context math(context)
 snippet === "equiv" A
 \equiv
 endsnippet
