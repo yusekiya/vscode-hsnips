@@ -376,6 +376,11 @@ snippet forall "for all" A
 endsnippet
 
 context math(context)
+snippet s.t. "such that or subjected to" A
+\text{s.t.}
+endsnippet
+
+context math(context)
 snippet === "equiv" A
 \equiv
 endsnippet
