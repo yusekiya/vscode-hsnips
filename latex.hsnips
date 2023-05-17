@@ -62,7 +62,7 @@ _{$1}$0
 endsnippet
 
 context math(context)
-snippet `([a-zA-Z])no` "subscript no" A
+snippet `([a-zA-Z])no` "subscript nought" A
 ``rv = m[1]``_{\text{0}}
 endsnippet
 
