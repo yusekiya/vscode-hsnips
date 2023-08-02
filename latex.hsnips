@@ -62,6 +62,11 @@ _{$1}$0
 endsnippet
 
 context math(context)
+snippet sb "subscript" Ai
+_{$1}$0
+endsnippet
+
+context math(context)
 snippet `([a-zA-Z])no` "subscript nought" A
 ``rv = m[1]``_{\text{0}}
 endsnippet
@@ -83,22 +88,22 @@ endsnippet
 
 context math(context)
 snippet trans "transpose" Ai
-^\top
+^\top 
 endsnippet
 
 context math(context)
 snippet conj "conjugate" Ai
-^*
+^* 
 endsnippet
 
 context math(context)
 snippet trace "trace" A
-\mathrm{Tr}\,
+\mathrm{Tr}
 endsnippet
 
 context math(context)
 snippet det "determinant" A
-\det
+\det 
 endsnippet
 
 context math(context)
@@ -207,7 +212,7 @@ snippet Hat "wide hat" A
 endsnippet
 
 context math(context)
-snippet dot "dot" A
+snippet `\\dot` "dot" A
 \dot{$1}$0
 endsnippet
 
@@ -281,33 +286,53 @@ snippet lim "limit" A
 endsnippet
 
 context math(context)
+snippet lim "limit" A
+\lim_{$1 \to $2}$0
+endsnippet
+
+context math(context)
 snippet ... "dots" A
-\dots
+\dots 
+endsnippet
+
+context math(context)
+snippet c.. "cdots" A
+\cdots 
+endsnippet
+
+context math(context)
+snippet v.. "vdots" A
+\vdots 
+endsnippet
+
+context math(context)
+snippet d.. "ddots" A
+\ddots 
 endsnippet
 
 context math(context)
 snippet <-> "left rigth arrow" A
-\leftrightarrow
+\leftrightarrow 
 endsnippet
 
 context math(context)
 snippet <--> "long left rigth arrow" A
-\longleftrightarrow
+\longleftrightarrow 
 endsnippet
 
 context math(context)
 snippet <=> "Left rigth arrow" A
-\Leftrightarrow
+\Leftrightarrow 
 endsnippet
 
 context math(context)
 snippet <==> "Long left rigth arrow" A
-\Longleftrightarrow
+\Longleftrightarrow 
 endsnippet
 
 context math(context)
 snippet -> "to" A
-\to
+\to 
 endsnippet
 
 context math(context)
@@ -317,62 +342,87 @@ endsnippet
 
 context math(context)
 snippet |> "mapsto" A
-\mapsto
+\mapsto 
 endsnippet
 
 context math(context)
 snippet \\\ "setminus" A
-\setminus
+\setminus 
 endsnippet
 
 context math(context)
 snippet || "middle" A
-\mid
+\mid 
 endsnippet
 
 context math(context)
 snippet and "logical and" A
-\cap
+\cap 
 endsnippet
 
 context math(context)
 snippet orr "logical or" A
-\cup
+\cup 
+endsnippet
+
+context math(context)
+snippet cap "cap" A
+\cap 
+endsnippet
+
+context math(context)
+snippet Cap "Big cap" A
+\bigcap
+endsnippet
+
+context math(context)
+snippet cup "cup" A
+\cup 
+endsnippet
+
+context math(context)
+snippet Cup "Big cup" A
+\bigcup
 endsnippet
 
 context math(context)
 snippet inn "set in" A
-\in
+\in 
+endsnippet
+
+context math(context)
+snippet subset "subset" A
+\subset 
 endsnippet
 
 context math(context)
 snippet `\\subset eq` "subseteq" A
-\subseteq
+\subseteq 
 endsnippet
 
 context math(context)
 snippet => "implies" A
-\implies
+\implies 
 endsnippet
 
 context math(context)
 snippet =< "impliedby" A
-\impliedby
+\impliedby 
 endsnippet
 
 context math(context)
 snippet iff "if and only if" A
-\iff
+\iff 
 endsnippet
 
 context math(context)
 snippet exists "exists" A
-\exists
+\exists 
 endsnippet
 
 context math(context)
 snippet forall "for all" A
-\forall
+\forall 
 endsnippet
 
 context math(context)
@@ -382,17 +432,17 @@ endsnippet
 
 context math(context)
 snippet === "equiv" A
-\equiv
+\equiv 
 endsnippet
 
 context math(context)
 snippet := "colon eq" A
-\coloneq
+\coloneq 
 endsnippet
 
 context math(context)
 snippet =: "eq colon" A
-\eqcolon
+\eqcolon 
 endsnippet
 
 context math(context)
@@ -402,7 +452,7 @@ endsnippet
 
 context math(context)
 snippet != "not eq" A
-\neq
+\neq 
 endsnippet
 
 context math(context)
@@ -417,52 +467,67 @@ endsnippet
 
 context math(context)
 snippet >> "much greater than" A
-\gg
+\gg 
 endsnippet
 
 context math(context)
 snippet << "much less than" A
-\ll
+\ll 
 endsnippet
 
 context math(context)
 snippet ~~ "similar" A
-\sim
+\sim 
 endsnippet
 
 context math(context)
 snippet \sim~ "approx" A
-\approx
+\approx 
 endsnippet
 
 context math(context)
 snippet prop "propotional to" A
-\propto
+\propto 
 endsnippet
 
 context math(context)
 snippet nabl "nabla" A
-\nabla
+\nabla 
 endsnippet
 
 context math(context)
-snippet del "nabla" A
-\nabla
+snippet del "nabla"
+\nabla 
+endsnippet
+
+context math(context)
+snippet div "divergence" A
+\mathrm{div}\,
+endsnippet
+
+context math(context)
+snippet rot "rotation" A
+\mathrm{rot}\,
+endsnippet
+
+context math(context)
+snippet grad "gradient" A
+\mathrm{grad}\,
 endsnippet
 
 context math(context)
 snippet xx "times" A
-\times
+\times 
 endsnippet
 
 context math(context)
 snippet ** "cdot" A
-\cdot
+\cdot 
 endsnippet
 
 context math(context)
 snippet para "parallel" A
-\parallel
+\parallel 
 endsnippet
 
 context math(context)
@@ -512,12 +577,12 @@ endsnippet
 
 context math(context)
 snippet ell "ell" A
-\ell
+\ell 
 endsnippet
 
 context math(context)
 snippet lll "ell" A
-\ell
+\ell 
 endsnippet
 
 context math(context)
@@ -606,6 +671,11 @@ endsnippet
 context math(context)
 snippet :z "z unit" A
 \hat{\mathbf{z}}
+endsnippet
+
+context math(context)
+snippet `\:e(.)` "e unit" A
+\mathbf{e}_{``rv=m[1]``}
 endsnippet
 
 ##############################################################################
@@ -699,27 +769,32 @@ snippet int "indefinite integral" A
 \int $1 \, d$2
 endsnippet
 
+context math(context)
+snippet i.int "indefinite integral" A
+\idotsint $1 \, d$2
+endsnippet
+
 ##############################################################################
 # Physics
 ##############################################################################
 context math(context)
 snippet kbt "temperature multiplied by the boltzmann constant" A
-k_{\text{B}}T
+k_{\text{B}}T 
 endsnippet
 
 context math(context)
 snippet hbar "hbar" A
-\hbar
+\hbar 
 endsnippet
 
 context math(context)
 snippet dag "dagger" Ai
-^\dagger
+^\dagger 
 endsnippet
 
 context math(context)
 snippet o+ "direct sum" A
-\oplus
+\oplus 
 endsnippet
 
 context math(context)
@@ -729,12 +804,12 @@ endsnippet
 
 context math(context)
 snippet ox "direct product" A
-\otimes
+\otimes 
 endsnippet
 
 context math(context)
 snippet otimes "direct product (alt)" A
-\otimes
+\otimes 
 endsnippet
 
 context math(context)
@@ -918,4 +993,3 @@ while (i >= 0) {
 rv = `${stripped.substring(0, i)}\\frac{${stripped.substring(i + 1, stripped.length - 1)}}`;
 ``{$1}$0
 endsnippet
-
