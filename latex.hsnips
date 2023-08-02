@@ -292,7 +292,7 @@ endsnippet
 
 context math(context)
 snippet ... "dots" A
-\dots 
+\dots
 endsnippet
 
 context math(context)
