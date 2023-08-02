@@ -52,7 +52,7 @@ snippet invs "inverse" Ai
 endsnippet
 
 context math(context)
-snippet rd "superscript" Ai
+snippet sp "superscript" Ai
 ^{$1}$0
 endsnippet
 
