@@ -37,22 +37,22 @@ snippet bf "math bold" A
 endsnippet
 
 context math(context)
-snippet sr "squared" Ai
+snippet `([ ]*)sr` "squared" Ai
 ^{2}
 endsnippet
 
 context math(context)
-snippet cb "cubed" Ai
+snippet `([ ]*)cb` "cubed" Ai
 ^{3}
 endsnippet
 
 context math(context)
-snippet invs "inverse" Ai
+snippet `([ ]*)invs` "inverse" Ai
 ^{-1}
 endsnippet
 
 context math(context)
-snippet sp "superscript" Ai
+snippet `([ ]*)sp` "superscript" Ai
 ^{$1}$0
 endsnippet
 
@@ -62,7 +62,7 @@ _{$1}$0
 endsnippet
 
 context math(context)
-snippet sb "subscript" Ai
+snippet `([ ]*)sb` "subscript" Ai
 _{$1}$0
 endsnippet
 
@@ -87,12 +87,12 @@ snippet rm "roman" A
 endsnippet
 
 context math(context)
-snippet trans "transpose" Ai
+snippet `([ ]*)trans` "transpose" Ai
 ^\top 
 endsnippet
 
 context math(context)
-snippet conj "conjugate" Ai
+snippet `([ ]*)conj` "conjugate" Ai
 ^* 
 endsnippet
 
@@ -107,12 +107,12 @@ snippet det "determinant" A
 endsnippet
 
 context math(context)
-snippet re "real part" A
+snippet Re "real part" A
 \mathrm{Re}
 endsnippet
 
 context math(context)
-snippet im "imaginary part" A
+snippet Im "imaginary part" A
 \mathrm{Im}
 endsnippet
 
@@ -356,6 +356,11 @@ snippet || "middle" A
 endsnippet
 
 context math(context)
+snippet `\\mid \|` "Parallel" A
+\parallel 
+endsnippet
+
+context math(context)
 snippet and "logical and" A
 \cap 
 endsnippet
@@ -363,6 +368,26 @@ endsnippet
 context math(context)
 snippet orr "logical or" A
 \cup 
+endsnippet
+
+context math(context)
+snippet wed "wedge symbol" A
+\wedge 
+endsnippet
+
+context math(context)
+snippet Wed "wedge operator" A
+\bigwedge 
+endsnippet
+
+context math(context)
+snippet vel "descending wedge symbol" A
+\vee 
+endsnippet
+
+context math(context)
+snippet Vel "descending wedge operator" A
+\bigvee 
 endsnippet
 
 context math(context)
@@ -477,7 +502,12 @@ endsnippet
 
 context math(context)
 snippet ~~ "similar" A
-\sim 
+\sim
+endsnippet
+
+context math(context)
+snippet ~= "similar" A
+\simeq 
 endsnippet
 
 context math(context)
@@ -712,12 +742,12 @@ snippet `pa([a-zA-Z])([a-zA-Z])2` "regex second partial derivative" A
 endsnippet
 
 context math(context)
-snippet `de([a-zA-Z])([a-zA-Z])` "regex derivative"
+snippet `d([a-zA-Z])d([a-zA-Z])` "regex derivative"
 \frac{d ``rv = m[1]``}{d ``rv = m[2]``}
 endsnippet
 
 context math(context)
-snippet `de([a-zA-Z])([a-zA-Z])2` "regex second derivative" A
+snippet `d([a-zA-Z])d([a-zA-Z])2` "regex second derivative" A
 \frac{d^2 ``rv = m[1]``}{d ``rv = m[2]``^2}
 endsnippet
 
@@ -730,6 +760,17 @@ context math(context)
 snippet ddx "differential operator" A
 \frac{d}{dx}
 endsnippet
+
+context math(context)
+snippet `del([A-Za-z])` "Abbreviated partial derivative"
+\partial_{``rv = m[1]``}
+endsnippet
+
+context math(context)
+snippet `Del([A-Za-z])` "Abbreviated partial derivative operator"
+D_{``rv = m[1]``}
+endsnippet
+
 
 ##############################################################################
 # Integrals
@@ -788,7 +829,7 @@ snippet hbar "hbar" A
 endsnippet
 
 context math(context)
-snippet dag "dagger" Ai
+snippet `([ ]*)dag` "dagger" Ai
 ^\dagger 
 endsnippet
 
@@ -960,7 +1001,7 @@ snippet lr[] "large paremtheses" A
 \left[ $0 \right]
 endsnippet
 
-snippet lra "large paremtheses" A
+snippet lr< "large paremtheses" A
 \left< $0 \right>
 endsnippet
 
