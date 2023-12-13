@@ -32,7 +32,7 @@ snippet text "text" Aw
 endsnippet
 
 context math(context)
-snippet bf "math bold" A
+snippet bf "math bold" Ai
 \mathbf{$0}
 endsnippet
 
@@ -72,17 +72,17 @@ snippet `([a-zA-Z])no` "subscript nought" A
 endsnippet
 
 context math(context)
-snippet sq "square root" A
+snippet sq "square root" Ai
 \sqrt{$1}$0
 endsnippet
 
 context math(context)
-snippet ee "exp (superscript)" A
+snippet ee "exp (superscript)" Ai
 e^{ $1 }$0
 endsnippet
 
 context math(context)
-snippet rm "roman" A
+snippet rm "roman" Ai
 \mathrm{$1}$0
 endsnippet
 
@@ -97,42 +97,42 @@ snippet `([ ]*)conj` "conjugate" Ai
 endsnippet
 
 context math(context)
-snippet trace "trace" A
+snippet trace "trace" Ai
 \mathrm{Tr}
 endsnippet
 
 context math(context)
-snippet det "determinant" A
+snippet det "determinant" Ai
 \det 
 endsnippet
 
 context math(context)
-snippet Re "real part" A
+snippet Re "real part" Ai
 \mathrm{Re}
 endsnippet
 
 context math(context)
-snippet Im "imaginary part" A
+snippet Im "imaginary part" Ai
 \mathrm{Im}
 endsnippet
 
 context math(context)
-snippet `([a-zA-Z]),\.` "bold style" A
+snippet `([a-zA-Z]),\.` "bold style" Ai
 \mathbf{``rv = m[1]``}
 endsnippet
 
 context math(context)
-snippet `([a-zA-Z])\.,` "bold style (alt)" A
+snippet `([a-zA-Z])\.,` "bold style (alt)" Ai
 \mathbf{``rv = m[1]``}
 endsnippet
 
 context math(context)
-snippet `([a-zA-Z]),,` "slant bold style" A
+snippet `([a-zA-Z]),,` "slant bold style" Ai
 \boldsymbol{``rv = m[1]``}
 endsnippet
 
 context math(context)
-snippet bs "slant bold style" A
+snippet bs "slant bold style" Ai
 \boldsymbol{$1}$0
 endsnippet
 
@@ -142,32 +142,32 @@ snippet `\b([a-zA-Z])(\d)` "sub number" A
 endsnippet
 
 context math(context)
-snippet `([a-zA-Z])_(\d\d)` "sub two numbers" A
+snippet `([a-zA-Z])_(\d\d)` "sub two numbers" Ai
 ``rv = m[1]``_{``rv = m[2]``}
 endsnippet
 
 context math(context)
-snippet `\\hat{([a-zA-Z])}(\d)` "hat with sub number" A
+snippet `\\hat{([a-zA-Z])}(\d)` "hat with sub number" Ai
 \hat{``rv = m[1]``}_{``rv = m[2]``}
 endsnippet
 
 context math(context)
-snippet `\\mathbf{([a-zA-Z])}(\d)` "bold symbol with sub number" A
+snippet `\\mathbf{([a-zA-Z])}(\d)` "bold symbol with sub number" Ai
 \mathbf{``rv = m[1]``}_{``rv = m[2]``}
 endsnippet
 
 context math(context)
-snippet `\\vec{([a-zA-Z])}(\d)` "vec with sub number" A
+snippet `\\vec{([a-zA-Z])}(\d)` "vec with sub number" Ai
 \vec{``rv = m[1]``}_{``rv = m[2]``}
 endsnippet
 
 context math(context)
-snippet `([a-gi-zA-Z])bar` "add bar" A
+snippet `([a-gi-zA-Z])bar` "add bar" Ai
 \bar{``rv = m[1]``}
 endsnippet
 
 context math(context)
-snippet `([a-zA-Z])hat` "add hat" A
+snippet `([a-zA-Z])hat` "add hat" Ai
 \hat{``rv = m[1]``}
 endsnippet
 
@@ -177,87 +177,87 @@ snippet `([a-zA-Z])ddot` "add ddot" A
 endsnippet
 
 context math(context)
-snippet `([a-ce-zA-Z])dot` "add dot" A
+snippet `([a-ce-zA-Z])dot` "add dot" Ai
 \dot{``rv = m[1]``}
 endsnippet
 
 context math(context)
-snippet `([a-zA-Z])vec` "vec" A
+snippet `([a-zA-Z])vec` "vec" Ai
 \vec{``rv = m[1]``}
 endsnippet
 
 context math(context)
-snippet `([a-zA-Z])tilde` "add tilde" A
+snippet `([a-zA-Z])tilde` "add tilde" Ai
 \tilde{``rv = m[1]``}
 endsnippet
 
 context math(context)
-snippet `([a-zA-Z])und` "add underline" A
+snippet `([a-zA-Z])und` "add underline" Ai
 \underline{``rv = m[1]``}
 endsnippet
 
 context math(context)
-snippet bar "bar" A
+snippet bar "bar" Ai
 \bar{$1}$0
 endsnippet
 
 context math(context)
-snippet hat "hat" A
+snippet hat "hat" Ai
 \hat{$1}$0
 endsnippet
 
 context math(context)
-snippet Hat "wide hat" A
+snippet Hat "wide hat" Ai
 \widehat{$1}$0
 endsnippet
 
 context math(context)
-snippet `\\dot` "dot" A
+snippet `\\dot` "dot" Ai
 \dot{$1}$0
 endsnippet
 
 context math(context)
-snippet ddot "ddot" A
+snippet ddot "ddot" Ai
 \ddot{$1}$0
 endsnippet
 
 context math(context)
-snippet vec "vec" A
+snippet vec "vec" Ai
 \vec{$1}$0
 endsnippet
 
 context math(context)
-snippet tilde "tilde" A
+snippet tilde "tilde" Ai
 \tilde{$1}$0
 endsnippet
 
 context math(context)
-snippet Tilde "wide tilde" A
+snippet Tilde "wide tilde" Ai
 \widetilde{$1}$0
 endsnippet
 
 context math(context)
-snippet und "und" A
+snippet und "und" Ai
 \underline{$1}$0
 endsnippet
 
 context math(context)
-snippet norm "norm" A
+snippet norm "norm" Ai
 \lVert $1 \rVert $0
 endsnippet
 
 context math(context)
-snippet abs "absolute value" A
+snippet abs "absolute value" Ai
 \lvert $1 \rvert $0
 endsnippet
 
 context math(context)
-snippet set "set" A
+snippet set "set" Ai
 \set{ $1 }$0
 endsnippet
 
 context math(context)
-snippet Set "large set" A
+snippet Set "large set" Ai
 \Set{ $1 }$0
 endsnippet
 
@@ -266,7 +266,7 @@ endsnippet
 # Symbols
 ##############################################################################
 context math(context)
-snippet ooo "infinity" Aw
+snippet ooo "infinity" Ai
 \infty
 endsnippet
 
@@ -276,37 +276,37 @@ snippet sum "summation" A
 endsnippet
 
 context math(context)
-snippet prod "production" A
-\prod
+snippet sum "summation" Ai
+\sum 
 endsnippet
 
 context math(context)
-snippet lim "limit" A
+snippet prod "production" Ai
+\prod 
+endsnippet
+
+context math(context)
+snippet lim "limit" Ai
 \lim_{$1 \to $2}$0
 endsnippet
 
 context math(context)
-snippet lim "limit" A
-\lim_{$1 \to $2}$0
-endsnippet
-
-context math(context)
-snippet ... "dots" A
+snippet ... "dots" Ai
 \dots
 endsnippet
 
 context math(context)
-snippet c.. "cdots" A
+snippet c.. "cdots" Ai
 \cdots 
 endsnippet
 
 context math(context)
-snippet v.. "vdots" A
+snippet v.. "vdots" Ai
 \vdots 
 endsnippet
 
 context math(context)
-snippet d.. "ddots" A
+snippet d.. "ddots" Ai
 \ddots 
 endsnippet
 
@@ -381,7 +381,7 @@ snippet wed "wedge symbol" A
 endsnippet
 
 context math(context)
-snippet Wed "wedge operator" A
+snippet Wed "wedge operator" Ai
 \bigwedge 
 endsnippet
 
@@ -391,7 +391,7 @@ snippet vel "descending wedge symbol" A
 endsnippet
 
 context math(context)
-snippet Vel "descending wedge operator" A
+snippet Vel "descending wedge operator" Ai
 \bigvee 
 endsnippet
 
@@ -401,7 +401,7 @@ snippet cap "cap" A
 endsnippet
 
 context math(context)
-snippet Cap "Big cap" A
+snippet Cap "Big cap" Ai
 \bigcap
 endsnippet
 
@@ -411,7 +411,7 @@ snippet cup "cup" A
 endsnippet
 
 context math(context)
-snippet Cup "Big cup" A
+snippet Cup "Big cup" Ai
 \bigcup
 endsnippet
 
@@ -446,12 +446,12 @@ snippet iff "if and only if" A
 endsnippet
 
 context math(context)
-snippet exists "exists" A
+snippet exists "exists" Ai
 \exists 
 endsnippet
 
 context math(context)
-snippet forall "for all" A
+snippet forall "for all" Ai
 \forall 
 endsnippet
 
@@ -476,7 +476,7 @@ snippet =: "eq colon" A
 endsnippet
 
 context math(context)
-snippet Sq "square" A
+snippet Sq "square" Ai
 \square
 endsnippet
 
@@ -526,12 +526,12 @@ snippet prop "propotional to" A
 endsnippet
 
 context math(context)
-snippet nabl "nabla" A
+snippet nabl "nabla" Ai
 \nabla 
 endsnippet
 
 context math(context)
-snippet del "nabla"
+snippet del "nabla" i
 \nabla 
 endsnippet
 
@@ -566,112 +566,112 @@ snippet para "parallel" A
 endsnippet
 
 context math(context)
-snippet xnn "x sub n" A
+snippet xnn "x sub n" Ai
 x_{n}
 endsnippet
 
 context math(context)
-snippet xii "x sub i" A
+snippet xii "x sub i" Ai
 x_{i}
 endsnippet
 
 context math(context)
-snippet xjj "x sub j" A
+snippet xjj "x sub j" Ai
 x_{j}
 endsnippet
 
 context math(context)
-snippet xp1 "x sub n + 1" A
+snippet xp1 "x sub n + 1" Ai
 x_{n+1}
 endsnippet
 
 context math(context)
-snippet ynn "y sub n" A
+snippet ynn "y sub n" Ai
 y_{n}
 endsnippet
 
 context math(context)
-snippet yii "y sub i" A
+snippet yii "y sub i" Ai
 y_{i}
 endsnippet
 
 context math(context)
-snippet yjj "y sub j" A
+snippet yjj "y sub j" Ai
 y_{j}
 endsnippet
 
 context math(context)
-snippet mcal "mathcal" A
+snippet mcal "mathcal" Ai
 \mathcal{$1}$0
 endsnippet
 
 context math(context)
-snippet mbb "mathbb" A
+snippet mbb "mathbb" Ai
 \mathbb{$1}$0
 endsnippet
 
 context math(context)
-snippet ell "ell" A
+snippet ell "ell" Ai
 \ell 
 endsnippet
 
 context math(context)
-snippet lll "ell" A
+snippet lll "ell" Ai
 \ell 
 endsnippet
 
 context math(context)
-snippet LL "Calligraphy L" A
+snippet LL "Calligraphy L" Ai
 \mathcal{L}
 endsnippet
 
 context math(context)
-snippet HH "Calligraphy H" A
+snippet HH "Calligraphy H" Ai
 \mathcal{H}
 endsnippet
 
 context math(context)
-snippet CC "Complex field" A
+snippet CC "Complex field" Ai
 \mathbb{C}
 endsnippet
 
 context math(context)
-snippet RR "Real field" A
+snippet RR "Real field" Ai
 \mathbb{R}
 endsnippet
 
 context math(context)
-snippet ZZ "Integer group" A
+snippet ZZ "Integer group" Ai
 \mathbb{Z}
 endsnippet
 
 context math(context)
-snippet NN "Natural number group" A
+snippet NN "Natural number group" Ai
 \mathbb{N}
 endsnippet
 
 context math(context)
-snippet II "Unit" A
+snippet II "Unit" Ai
 \mathbb{1}
 endsnippet
 
 context math(context)
-snippet \mathbb{1}I "Unit (alt)" A
+snippet \mathbb{1}I "Unit (alt)" Ai
 \hat{\mathbb{1}}
 endsnippet
 
 context math(context)
-snippet AA "Calligraphy A" A
+snippet AA "Calligraphy A" Ai
 \mathcal{A}
 endsnippet
 
 context math(context)
-snippet BB "bold B" A
+snippet BB "bold B" Ai
 \mathbf{B}
 endsnippet
 
 context math(context)
-snippet EE "bold E" A
+snippet EE "bold E" Ai
 \mathbf{E}
 endsnippet
 
@@ -679,37 +679,37 @@ endsnippet
 # Unit vectors
 ##############################################################################
 context math(context)
-snippet :i "i-th unit vector" A
+snippet :i "i-th unit vector" Ai
 \mathbf{i}
 endsnippet
 
 context math(context)
-snippet :j "j-th unit vector" A
+snippet :j "j-th unit vector" Ai
 \mathbf{j}
 endsnippet
 
 context math(context)
-snippet :k "k-th unit vector" A
+snippet :k "k-th unit vector" Ai
 \mathbf{k}
 endsnippet
 
 context math(context)
-snippet :x "x unit" A
+snippet :x "x unit" Ai
 \hat{\mathbf{x}}
 endsnippet
 
 context math(context)
-snippet :y "y unit" A
+snippet :y "y unit" Ai
 \hat{\mathbf{y}}
 endsnippet
 
 context math(context)
-snippet :z "z unit" A
+snippet :z "z unit" Ai
 \hat{\mathbf{z}}
 endsnippet
 
 context math(context)
-snippet `\:e(.)` "e unit" A
+snippet `\:e(.)` "e unit" Ai
 \mathbf{e}_{``rv=m[1]``}
 endsnippet
 
@@ -717,62 +717,62 @@ endsnippet
 # Derivatives
 ##############################################################################
 context math(context)
-snippet par "partial derivative"
+snippet par "partial derivative" i
 \frac{\partial $1}{\partial $2}$0
 endsnippet
 
 context math(context)
-snippet pa2 "second partial derivative" A
+snippet pa2 "second partial derivative" Ai
 \frac{\partial^2 $1}{\partial $2^2}$0
 endsnippet
 
 context math(context)
-snippet pa3 "third partial derivative" A
+snippet pa3 "third partial derivative" Ai
 \frac{\partial^3 $1}{\partial $2^3}$0
 endsnippet
 
 context math(context)
-snippet `pa([a-zA-Z])([a-zA-Z])` "regex partial derivative"
+snippet `pa([a-zA-Z])([a-zA-Z])` "regex partial derivative" i
 \frac{\partial ``rv = m[1]``}{\partial ``rv = m[2]``}
 endsnippet
 
 context math(context)
-snippet `pa([a-zA-Z])([a-zA-Z])([a-zA-Z])` "regex partial derivative two vars"
+snippet `pa([a-zA-Z])([a-zA-Z])([a-zA-Z])` "regex partial derivative two vars" i
 \frac{\partial^2 ``rv = m[1]``}{\partial ``rv = m[2]`` \partial ``rv = m[3]``}
 endsnippet
 
 context math(context)
-snippet `pa([a-zA-Z])([a-zA-Z])2` "regex second partial derivative" A
+snippet `pa([a-zA-Z])([a-zA-Z])2` "regex second partial derivative" Ai
 \frac{\partial^2 ``rv = m[1]``}{\partial ``rv = m[2]``^2}
 endsnippet
 
 context math(context)
-snippet `d([a-zA-Z])d([a-zA-Z])` "regex derivative"
+snippet `d([a-zA-Z])d([a-zA-Z])` "regex derivative" i
 \frac{d ``rv = m[1]``}{d ``rv = m[2]``}
 endsnippet
 
 context math(context)
-snippet `d([a-zA-Z])d([a-zA-Z])2` "regex second derivative" A
+snippet `d([a-zA-Z])d([a-zA-Z])2` "regex second derivative" Ai
 \frac{d^2 ``rv = m[1]``}{d ``rv = m[2]``^2}
 endsnippet
 
 context math(context)
-snippet ddt "time differential operator" A
+snippet ddt "time differential operator" Ai
 \frac{d}{dt}
 endsnippet
 
 context math(context)
-snippet ddx "differential operator" A
+snippet ddx "differential operator" Ai
 \frac{d}{dx}
 endsnippet
 
 context math(context)
-snippet `del([A-Za-z])` "Abbreviated partial derivative"
+snippet `del([A-Za-z])` "Abbreviated partial derivative" i
 \partial_{``rv = m[1]``}
 endsnippet
 
 context math(context)
-snippet `Del([A-Za-z])` "Abbreviated partial derivative operator"
+snippet `Del([A-Za-z])` "Abbreviated partial derivative operator" i
 D_{``rv = m[1]``}
 endsnippet
 
@@ -781,42 +781,42 @@ endsnippet
 # Integrals
 ##############################################################################
 context math(context)
-snippet oinf "half improper integral" A
+snippet oinf "half improper integral" Ai
 \int_{0}^{\infty} $1 \, d$2
 endsnippet
 
 context math(context)
-snippet infi "improper integral" A
+snippet infi "improper integral" Ai
 \int_{-\infty}^{\infty} $1 \, d$2
 endsnippet
 
 context math(context)
-snippet dint "definite integral" A
+snippet dint "definite integral" Ai
 \int_{$1}^{$2} $3 \, d$4
 endsnippet
 
 context math(context)
-snippet oint "closed loop integral" A
+snippet oint "closed loop integral" Ai
 \oint
 endsnippet
 
 context math(context)
-snippet iiint "3-fold integral" A
+snippet iiint "3-fold integral" Ai
 \iiint
 endsnippet
 
 context math(context)
-snippet iint "2-fold integral" A
+snippet iint "2-fold integral" Ai
 \iint
 endsnippet
 
 context math(context)
-snippet int "indefinite integral" A
+snippet int "indefinite integral" Ai
 \int $1 \, d$2
 endsnippet
 
 context math(context)
-snippet i.int "indefinite integral" A
+snippet i.int "indefinite integral" Ai
 \idotsint $1 \, d$2
 endsnippet
 
@@ -824,12 +824,12 @@ endsnippet
 # Physics
 ##############################################################################
 context math(context)
-snippet kbt "temperature multiplied by the boltzmann constant" A
+snippet kbt "temperature multiplied by the boltzmann constant" Ai
 k_{\text{B}}T 
 endsnippet
 
 context math(context)
-snippet hbar "hbar" A
+snippet hbar "hbar" Ai
 \hbar 
 endsnippet
 
@@ -844,7 +844,7 @@ snippet o+ "direct sum" A
 endsnippet
 
 context math(context)
-snippet O+ "big direct sum" A
+snippet O+ "big direct sum" Ai
 \bigoplus
 endsnippet
 
@@ -859,57 +859,57 @@ snippet otimes "direct product (alt)" A
 endsnippet
 
 context math(context)
-snippet Ox "big direct product" A
+snippet Ox "big direct product" Ai
 \bigotimes
 endsnippet
 
 context math(context)
-snippet bra "bra vector" A
+snippet bra "bra vector" Ai
 \bra{$1}$0
 endsnippet
 
 context math(context)
-snippet ket "ket vector" A
+snippet ket "ket vector" Ai
 \ket{$1}$0
 endsnippet
 
 context math(context)
-snippet brk "braket" A
+snippet brk "braket" Ai
 \braket{$1}$0
 endsnippet
 
 context math(context)
-snippet `\\bra{([^|]+)\|` "bra to braket" A
+snippet `\\bra{([^|]+)\|` "bra to braket" Ai
 \braket{``rv = m[1]`` | $0
 endsnippet
 
 context math(context)
-snippet outp "outer product" A
+snippet outp "outer product" Ai
 \ket{$1}\!\bra{$1}$0
 endsnippet
 
 context math(context)
-snippet Bra "large bra vector" A
+snippet Bra "large bra vector" Ai
 \Bra{$1}$0
 endsnippet
 
 context math(context)
-snippet Ket "large ket vector" A
+snippet Ket "large ket vector" Ai
 \Ket{$1}$0
 endsnippet
 
 context math(context)
-snippet Brk "large braket" A
+snippet Brk "large braket" Ai
 \Braket{$1}$0
 endsnippet
 
 context math(context)
-snippet `\\Bra{([^|]+)\|` "large bra to large braket" A
+snippet `\\Bra{([^|]+)\|` "large bra to large braket" Ai
 \Braket{``rv = m[1]`` | $0
 endsnippet
 
 context math(context)
-snippet Outp "large outer product" A
+snippet Outp "large outer product" Ai
 \Ket{$1}\!\Bra{$1}$0
 endsnippet
 
@@ -982,31 +982,31 @@ endsnippet
 ##############################################################################
 # Brackets
 ##############################################################################
-snippet avg "average" A
+snippet avg "average" Ai
 \langle $1 \rangle $0
 endsnippet
 
-snippet mod "mod" A
+snippet mod "mod" Ai
 | $1 |$0
 endsnippet
 
-snippet lr() "large paremtheses" A
+snippet lr() "large paremtheses" Ai
 \left( $0 \right)
 endsnippet
 
-snippet lr| "large paremtheses" A
+snippet lr| "large paremtheses" Ai
 \left| $0 \right|
 endsnippet
 
-snippet lr{} "large paremtheses" A
+snippet lr{} "large paremtheses" Ai
 \left{ $0 \right}
 endsnippet
 
-snippet lr[] "large paremtheses" A
+snippet lr[] "large paremtheses" Ai
 \left[ $0 \right]
 endsnippet
 
-snippet lr< "large paremtheses" A
+snippet lr< "large paremtheses" Ai
 \left< $0 \right>
 endsnippet
 
@@ -1015,17 +1015,17 @@ endsnippet
 # Fraction
 ##############################################################################
 context math(context)
-snippet // "Fraction simple" A
+snippet // "Fraction simple" Ai
 \frac{$1}{$2}$0
 endsnippet
 
 context math(context)
-snippet `((\d+)|(\d*)(\\)?([A-Za-z]+)((\^|_)(\{\d+\}|\d))*)/` "Fraction no ()" A
+snippet `((\d+)|(\d*)(\\)?([A-Za-z]+)((\^|_)(\{\d+\}|\d))*)/` "Fraction no ()" Ai
 \frac{``rv = m[1]``}{$1}$0
 endsnippet
 
 context math(context)
-snippet `^.*\)/` "() Fraction" A
+snippet `^.*\)/` "() Fraction" Ai
 ``
 let stripped = m[0].substring(0, m[0].length - 1);
 let depth = 0;
