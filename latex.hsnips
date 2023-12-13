@@ -271,8 +271,8 @@ snippet ooo "infinity" Ai
 endsnippet
 
 context math(context)
-snippet sum "summation" A
-\sum
+snippet OO "emptyset" Ai
+\emptyset 
 endsnippet
 
 context math(context)
