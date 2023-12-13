@@ -536,18 +536,18 @@ snippet del "nabla" i
 endsnippet
 
 context math(context)
-snippet div "divergence" A
-\mathrm{div}\,
+snippet div "divergence" Ai
+\div 
 endsnippet
 
 context math(context)
-snippet rot "rotation" A
-\mathrm{rot}\,
+snippet rot "rotation" Ai
+\rot 
 endsnippet
 
 context math(context)
-snippet grad "gradient" A
-\mathrm{grad}\,
+snippet grad "gradient" Ai
+\grad 
 endsnippet
 
 context math(context)
