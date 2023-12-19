@@ -561,6 +561,11 @@ snippet ** "cdot" A
 endsnippet
 
 context math(context)
+snippet xc "cdot" A
+\cdot 
+endsnippet
+
+context math(context)
 snippet para "parallel" A
 \parallel 
 endsnippet
