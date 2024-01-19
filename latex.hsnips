@@ -561,7 +561,7 @@ snippet ** "cdot" A
 endsnippet
 
 context math(context)
-snippet xc "cdot" A
+snippet cc "cdot" A
 \cdot 
 endsnippet
 
