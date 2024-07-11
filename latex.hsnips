@@ -307,17 +307,17 @@ endsnippet
 
 context math(context)
 snippet ..b "ellipsis for binary operations" Ai
-\dotscb
+\dotsb
 endsnippet
 
 context math(context)
 snippet ..i "ellipsis for integrals" Ai
-\dotscb
+\dotsi
 endsnippet
 
 context math(context)
 snippet ..o "other ellipsis" Ai
-\dotsco
+\dotso
 endsnippet
 
 context math(context)
