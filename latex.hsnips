@@ -267,192 +267,192 @@ endsnippet
 # Greek alphabet
 ##############################################################################
 context math(context)
-snippet @a "alpha" Ai
+snippet @a "α" Ai
 \alpha 
 endsnippet
 
 context math(context)
-snippet @b "beta" Ai
+snippet @b "β" Ai
 \beta 
 endsnippet
 
 context math(context)
-snippet @g "gamma" Ai
+snippet @g "γ" Ai
 \gamma 
 endsnippet
 
 context math(context)
-snippet @G "Gamma" Ai
+snippet @G "Γ" Ai
 \Gamma 
 endsnippet
 
 context math(context)
-snippet @d "delta" Ai
+snippet @d "δ" Ai
 \delta 
 endsnippet
 
 context math(context)
-snippet @D "Delta" Ai
+snippet @D "Δ" Ai
 \Delta 
 endsnippet
 
 context math(context)
-snippet @e "epsilon" Ai
+snippet @e "ε" Ai
 \epsilon 
 endsnippet
 
 context math(context)
-snippet @ve "var epsilon" Ai
+snippet @ve "variant of ε" Ai
 \varepsilon 
 endsnippet
 
 context math(context)
-snippet @z "zeta" Ai
+snippet @z "ζ" Ai
 \zeta 
 endsnippet
 
 context math(context)
-snippet eta "eta" Ai
+snippet eta "η" Ai
 \eta 
 endsnippet
 
 context math(context)
-snippet @t "theta" Ai
+snippet @t "θ" Ai
 \theta 
 endsnippet
 
 context math(context)
-snippet @vt "var theta" Ai
+snippet @vt "variant of θ" Ai
 \vartheta 
 endsnippet
 
 context math(context)
-snippet @T "Theta" Ai
+snippet @T "Θ" Ai
 \Theta 
 endsnippet
 
 context math(context)
-snippet @i "iota" Ai
+snippet @i "ι" Ai
 \iota 
 endsnippet
 
 context math(context)
-snippet @k "kappa" Ai
+snippet @k "κ" Ai
 \kappa 
 endsnippet
 
 context math(context)
-snippet @l "lambda" Ai
+snippet @l "λ" Ai
 \lambda 
 endsnippet
 
 context math(context)
-snippet @L "Lambda" Ai
+snippet @L "Λ" Ai
 \Lambda 
 endsnippet
 
 context math(context)
-snippet mu "mu" Ai
+snippet mu "μ" Ai
 \mu 
 endsnippet
 
 context math(context)
-snippet nu "nu" Ai
+snippet nu "ν" Ai
 \nu 
 endsnippet
 
 context math(context)
-snippet xi "xi" Ai
+snippet xi "ξ" Ai
 \xi 
 endsnippet
 
 context math(context)
-snippet Xi "Xi" Ai
+snippet Xi "Ξ" Ai
 \Xi 
 endsnippet
 
 context math(context)
-snippet pi "pi" Ai
+snippet pi "π" Ai
 \pi 
 endsnippet
 
 context math(context)
-snippet rho "rho" Ai
+snippet rho "ρ" Ai
 \rho 
 endsnippet
 
 context math(context)
-snippet @vr "var rho" Ai
+snippet @vr "variant of ρ" Ai
 \varrho 
 endsnippet
 
 context math(context)
-snippet @s "sigma" Ai
+snippet @s "σ" Ai
 \sigma 
 endsnippet
 
 context math(context)
-snippet @S "Sigma" Ai
+snippet @S "Σ" Ai
 \Sigma 
 endsnippet
 
 context math(context)
-snippet @vs "varsigma" Ai
+snippet @vs "variant of σ" Ai
 \varsigma 
 endsnippet
 
 context math(context)
-snippet tau "tau" Ai
+snippet tau "τ" Ai
 \tau 
 endsnippet
 
 context math(context)
-snippet @u "upsilon" Ai
+snippet @u "υ" Ai
 \upsilon 
 endsnippet
 
 context math(context)
-snippet @U "Upsilon" Ai
+snippet @U "Υ" Ai
 \Upsilon 
 endsnippet
 
 context math(context)
-snippet phi "phi" Ai
+snippet phi "φ" Ai
 \phi 
 endsnippet
 
 context math(context)
-snippet @vp "varphi" Ai
+snippet @vp "variant of φ" Ai
 \varphi 
 endsnippet
 
 context math(context)
-snippet Phi "Phi" Ai
+snippet Phi "Φ" Ai
 \Phi 
 endsnippet
 
 context math(context)
-snippet chi "chi" Ai
+snippet chi "χ" Ai
 \chi 
 endsnippet
 
 context math(context)
-snippet psi "psi" Ai
+snippet psi "ψ" Ai
 \psi 
 endsnippet
 
 context math(context)
-snippet Psi "Psi" Ai
+snippet Psi "Ψ" Ai
 \Psi 
 endsnippet
 
 context math(context)
-snippet @o "omega" Ai
+snippet @o "ω" Ai
 \omega 
 endsnippet
 
 context math(context)
-snippet @O "Omega" Ai
+snippet @O "Ω" Ai
 \Omega 
 endsnippet
 
