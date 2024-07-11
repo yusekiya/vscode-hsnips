@@ -1003,14 +1003,14 @@ $1
 endsnippet
 
 context math(context)
-snippet array "array"
+snippet arr "array"
 \begin{array}
 $1
 \end{array}$0
 endsnippet
 
 context math(context)
-snippet matrix "matrix"
+snippet mat "matrix"
 \begin{matrix}
 $1
 \end{matrix}$0
