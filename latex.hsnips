@@ -98,8 +98,13 @@ snippet `([ ]*)conj` "conjugate" Ai
 endsnippet
 
 context math(context)
-snippet trace "trace" Ai
-\mathrm{Tr}
+snippet trace "trace" A
+\tr
+endsnippet
+
+context math(context)
+snippet Trace "trace" A
+\Tr
 endsnippet
 
 context math(context)
