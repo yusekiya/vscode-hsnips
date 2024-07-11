@@ -1308,5 +1308,5 @@ endsnippet
 
 context math(context)
 snippet ;f "Insert & symbol to separate rows" Ai
-& 
+&
 endsnippet
