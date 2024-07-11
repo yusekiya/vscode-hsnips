@@ -264,6 +264,200 @@ endsnippet
 
 
 ##############################################################################
+# Greek alphabet
+##############################################################################
+context math(context)
+snippet @a "alpha" Ai
+\alpha 
+endsnippet
+
+context math(context)
+snippet @b "beta" Ai
+\beta 
+endsnippet
+
+context math(context)
+snippet @g "gamma" Ai
+\gamma 
+endsnippet
+
+context math(context)
+snippet @G "Gamma" Ai
+\Gamma 
+endsnippet
+
+context math(context)
+snippet @d "delta" Ai
+\delta 
+endsnippet
+
+context math(context)
+snippet @D "Delta" Ai
+\Delta 
+endsnippet
+
+context math(context)
+snippet @e "epsilon" Ai
+\epsilon 
+endsnippet
+
+context math(context)
+snippet @ve "var epsilon" Ai
+\varepsilon 
+endsnippet
+
+context math(context)
+snippet @z "zeta" Ai
+\zeta 
+endsnippet
+
+context math(context)
+snippet eta "eta" Ai
+\eta 
+endsnippet
+
+context math(context)
+snippet @t "theta" Ai
+\theta 
+endsnippet
+
+context math(context)
+snippet @vt "var theta" Ai
+\vartheta 
+endsnippet
+
+context math(context)
+snippet @T "Theta" Ai
+\Theta 
+endsnippet
+
+context math(context)
+snippet @i "iota" Ai
+\iota 
+endsnippet
+
+context math(context)
+snippet @k "kappa" Ai
+\kappa 
+endsnippet
+
+context math(context)
+snippet @l "lambda" Ai
+\lambda 
+endsnippet
+
+context math(context)
+snippet @L "Lambda" Ai
+\Lambda 
+endsnippet
+
+context math(context)
+snippet mu "mu" Ai
+\mu 
+endsnippet
+
+context math(context)
+snippet nu "nu" Ai
+\nu 
+endsnippet
+
+context math(context)
+snippet xi "xi" Ai
+\xi 
+endsnippet
+
+context math(context)
+snippet Xi "Xi" Ai
+\Xi 
+endsnippet
+
+context math(context)
+snippet pi "pi" Ai
+\pi 
+endsnippet
+
+context math(context)
+snippet rho "rho" Ai
+\rho 
+endsnippet
+
+context math(context)
+snippet @vr "var rho" Ai
+\varrho 
+endsnippet
+
+context math(context)
+snippet @s "sigma" Ai
+\sigma 
+endsnippet
+
+context math(context)
+snippet @S "Sigma" Ai
+\Sigma 
+endsnippet
+
+context math(context)
+snippet @vs "varsigma" Ai
+\varsigma 
+endsnippet
+
+context math(context)
+snippet tau "tau" Ai
+\tau 
+endsnippet
+
+context math(context)
+snippet @u "upsilon" Ai
+\upsilon 
+endsnippet
+
+context math(context)
+snippet @U "Upsilon" Ai
+\Upsilon 
+endsnippet
+
+context math(context)
+snippet phi "phi" Ai
+\phi 
+endsnippet
+
+context math(context)
+snippet @vp "varphi" Ai
+\varphi 
+endsnippet
+
+context math(context)
+snippet Phi "Phi" Ai
+\Phi 
+endsnippet
+
+context math(context)
+snippet chi "chi" Ai
+\chi 
+endsnippet
+
+context math(context)
+snippet psi "psi" Ai
+\psi 
+endsnippet
+
+context math(context)
+snippet Psi "Psi" Ai
+\Psi 
+endsnippet
+
+context math(context)
+snippet @o "omega" Ai
+\omega 
+endsnippet
+
+context math(context)
+snippet @O "Omega" Ai
+\Omega 
+endsnippet
+
+
+##############################################################################
 # Symbols
 ##############################################################################
 context math(context)
@@ -603,6 +797,11 @@ endsnippet
 
 context math(context)
 snippet xii "x sub i" Ai
+x_{i}
+endsnippet
+
+context math(context)
+snippet `\\xi i` "x sub i" Ai
 x_{i}
 endsnippet
 
