@@ -108,13 +108,13 @@ snippet det "determinant" Ai
 endsnippet
 
 context math(context)
-snippet Re "real part" Ai
-\mathrm{Re}
+snippet re "real part" A
+\Re
 endsnippet
 
 context math(context)
-snippet Im "imaginary part" Ai
-\mathrm{Im}
+snippet im "imaginary part" A
+\Im
 endsnippet
 
 context math(context)
