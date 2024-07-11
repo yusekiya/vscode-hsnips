@@ -1232,30 +1232,37 @@ endsnippet
 ##############################################################################
 # Brackets
 ##############################################################################
+context math(context)
 snippet avg "average" Ai
 \langle $1 \rangle $0
 endsnippet
 
+context math(context)
 snippet mod "mod" Ai
 | $1 |$0
 endsnippet
 
+context math(context)
 snippet lr() "large paremtheses" Ai
 \left( $0 \right)
 endsnippet
 
+context math(context)
 snippet lr| "large paremtheses" Ai
 \left| $0 \right|
 endsnippet
 
+context math(context)
 snippet lr{} "large paremtheses" Ai
 \left{ $0 \right}
 endsnippet
 
+context math(context)
 snippet lr[] "large paremtheses" Ai
 \left[ $0 \right]
 endsnippet
 
+context math(context)
 snippet lr< "large paremtheses" Ai
 \left< $0 \right>
 endsnippet
