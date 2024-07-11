@@ -671,6 +671,11 @@ snippet exists "exists" Ai
 endsnippet
 
 context math(context)
+snippet `e\\xi sts` "exists" Ai
+\exists 
+endsnippet
+
+context math(context)
 snippet forall "for all" Ai
 \forall 
 endsnippet
