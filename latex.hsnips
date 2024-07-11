@@ -705,6 +705,7 @@ snippet EE "bold E" Ai
 \mathbf{E}
 endsnippet
 
+
 ##############################################################################
 # Unit vectors
 ##############################################################################
@@ -959,54 +960,61 @@ $0
 \end{$1}
 endsnippet
 
-# context math(context)
-# snippet pmat "parentheses matrix" A
-# \begin{pmatrix}
-# $1
-# \end{pmatrix}$0
-# endsnippet
-# context math(context)
-# snippet bmat "bracket matrix" A
-# \begin{bmatrix}
-# $1
-# \end{bmatrix}$0
-# endsnippet
-# context math(context)
-# snippet Bmat "brace matrix" A
-# \begin{Bmatrix}
-# $1
-# \end{Bmatrix}$0
-# endsnippet
-# context math(context)
-# snippet vmat "vartical line matrix" A
-# \begin{vmatrix}
-# $1
-# \end{vmatrix}$0
-# endsnippet
-# context math(context)
-# snippet Vmat "double vartical line matrix" A
-# \begin{Vmatrix}
-# $1
-# \end{Vmatrix}$0
-# endsnippet
-# context math(context)
-# snippet case "cases" A
-# \begin{cases}
-# $1
-# \end{cases}$0
-# endsnippet
-# context math(context)
-# snippet array "array" A
-# \begin{array}
-# $1
-# \end{array}$0
-# endsnippet
-# context math(context)
-# snippet matrix "matrix" A
-# \begin{matrix}
-# $1
-# \end{matrix}$0
-# endsnippet
+context math(context)
+snippet pmat "parentheses matrix" A
+\begin{pmatrix}
+$1
+\end{pmatrix}$0
+endsnippet
+
+context math(context)
+snippet bmat "bracket matrix" A
+\begin{bmatrix}
+$1
+\end{bmatrix}$0
+endsnippet
+
+context math(context)
+snippet Bmat "brace matrix" A
+\begin{Bmatrix}
+$1
+\end{Bmatrix}$0
+endsnippet
+
+context math(context)
+snippet vmat "vartical line matrix" A
+\begin{vmatrix}
+$1
+\end{vmatrix}$0
+endsnippet
+
+context math(context)
+snippet Vmat "double vartical line matrix" A
+\begin{Vmatrix}
+$1
+\end{Vmatrix}$0
+endsnippet
+
+context math(context)
+snippet case "cases" A
+\begin{cases}
+$1
+\end{cases}$0
+endsnippet
+
+context math(context)
+snippet array "array" A
+\begin{array}
+$1
+\end{array}$0
+endsnippet
+
+context math(context)
+snippet matrix "matrix" A
+\begin{matrix}
+$1
+\end{matrix}$0
+endsnippet
 
 
 ##############################################################################
