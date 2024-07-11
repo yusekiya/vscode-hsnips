@@ -296,6 +296,31 @@ snippet ... "dots" Ai
 endsnippet
 
 context math(context)
+snippet ..c "ellipsis for commas" Ai
+\dotsc 
+endsnippet
+
+context math(context)
+snippet ..m "ellipsis for multiplications" Ai
+\dotsm 
+endsnippet
+
+context math(context)
+snippet ..b "ellipsis for binary operations" Ai
+\dotscb
+endsnippet
+
+context math(context)
+snippet ..i "ellipsis for integrals" Ai
+\dotscb
+endsnippet
+
+context math(context)
+snippet ..o "other ellipsis" Ai
+\dotsco
+endsnippet
+
+context math(context)
 snippet c.. "cdots" Ai
 \cdots 
 endsnippet
