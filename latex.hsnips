@@ -1296,3 +1296,17 @@ while (i >= 0) {
 rv = `${stripped.substring(0, i)}\\frac{${stripped.substring(i + 1, stripped.length - 1)}}`;
 ``{$1}$0
 endsnippet
+
+
+##############################################################################
+# Utilities
+##############################################################################
+context math(context)
+snippet ;a "Insert @ symbol" Ai
+@
+endsnippet
+
+context math(context)
+snippet ;f "Insert & symbol to separate rows" Ai
+& 
+endsnippet
