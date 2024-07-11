@@ -961,56 +961,56 @@ $0
 endsnippet
 
 context math(context)
-snippet pmat "parentheses matrix" A
+snippet pmat "parentheses matrix"
 \begin{pmatrix}
 $1
 \end{pmatrix}$0
 endsnippet
 
 context math(context)
-snippet bmat "bracket matrix" A
+snippet bmat "bracket matrix"
 \begin{bmatrix}
 $1
 \end{bmatrix}$0
 endsnippet
 
 context math(context)
-snippet Bmat "brace matrix" A
+snippet Bmat "brace matrix"
 \begin{Bmatrix}
 $1
 \end{Bmatrix}$0
 endsnippet
 
 context math(context)
-snippet vmat "vartical line matrix" A
+snippet vmat "vartical line matrix"
 \begin{vmatrix}
 $1
 \end{vmatrix}$0
 endsnippet
 
 context math(context)
-snippet Vmat "double vartical line matrix" A
+snippet Vmat "double vartical line matrix"
 \begin{Vmatrix}
 $1
 \end{Vmatrix}$0
 endsnippet
 
 context math(context)
-snippet case "cases" A
+snippet case "cases"
 \begin{cases}
 $1
 \end{cases}$0
 endsnippet
 
 context math(context)
-snippet array "array" A
+snippet array "array"
 \begin{array}
 $1
 \end{array}$0
 endsnippet
 
 context math(context)
-snippet matrix "matrix" A
+snippet matrix "matrix"
 \begin{matrix}
 $1
 \end{matrix}$0
