@@ -705,6 +705,11 @@ snippet EE "bold E" Ai
 \mathbf{E}
 endsnippet
 
+context math(context)
+snippet ii "imaginary unit" Ai
+\mathrm{i}
+endsnippet
+
 
 ##############################################################################
 # Unit vectors
