@@ -1009,7 +1009,7 @@ endsnippet
 
 context math(context)
 snippet arr "array"
-\begin{array}
+\begin{array}{|c|}
 $1
 \end{array}$0
 endsnippet
