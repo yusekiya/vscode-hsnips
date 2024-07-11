@@ -377,6 +377,11 @@ snippet pi "π" Ai
 endsnippet
 
 context math(context)
+snippet Pi "Π" Ai
+\Pi 
+endsnippet
+
+context math(context)
 snippet rho "ρ" Ai
 \rho 
 endsnippet
