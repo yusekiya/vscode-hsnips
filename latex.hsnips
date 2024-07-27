@@ -1038,43 +1038,43 @@ endsnippet
 # Integrals
 ##############################################################################
 context math(context)
-snippet oinf "half improper integral" Ai
-\int_{0}^{\infty} $1 \, d$2
+snippet int "integral" A
+\int d$1 \, $0
 endsnippet
 
 context math(context)
-snippet infi "improper integral" Ai
-\int_{-\infty}^{\infty} $1 \, d$2
+snippet dint "definite integral" A
+\int_{$1}^{$2} d$3 \, $0
 endsnippet
 
 context math(context)
-snippet dint "definite integral" Ai
-\int_{$1}^{$2} $3 \, d$4
+snippet oinf "half improper integral" A
+\int_{0}^{\infty} d$1 \, $0
 endsnippet
 
 context math(context)
-snippet oint "closed loop integral" Ai
-\oint
+snippet infi "improper integral" A
+\int_{-\infty}^{\infty} d$1 \, $0
 endsnippet
 
 context math(context)
-snippet iiint "3-fold integral" Ai
-\iiint
+snippet oint "closed loop integral" A
+\oint 
 endsnippet
 
 context math(context)
-snippet iint "2-fold integral" Ai
-\iint
+snippet `\\mathrm{i}nt` "2-fold integral" A
+\iint 
 endsnippet
 
 context math(context)
-snippet int "indefinite integral" Ai
-\int $1 \, d$2
+snippet `\\mathrm{i}int` "3-fold integral" A
+\iiint 
 endsnippet
 
 context math(context)
-snippet i.int "indefinite integral" Ai
-\idotsint $1 \, d$2
+snippet i.int "indefinite integral" A
+\idotsint d$1 \, $0
 endsnippet
 
 
