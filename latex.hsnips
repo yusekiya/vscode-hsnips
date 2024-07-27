@@ -1,6 +1,16 @@
 global
 function math(context) {
-    return context.scopes.some(s => s.startsWith("meta.math")) && !context.scopes.some(s => s.startsWith("comment") || s.startsWith("meta.text.normal.tex"));
+    return context.scopes.some(
+		s => s.startsWith("meta.math")
+	)
+	&& !context.scopes.some(
+		s => (
+			s.startsWith("comment")
+			|| s.startsWith("meta.definition.label")
+			|| s.startsWith("meta.reference.label")
+			|| s.startsWith("meta.text.normal.tex")
+		)
+	);
 }
 endglobal
 
