@@ -1258,27 +1258,27 @@ snippet mod "mod" Ai
 endsnippet
 
 context math(context)
-snippet lr() "large paremtheses" Ai
+snippet lr() "large parentheses " Ai
 \left( $0 \right)
 endsnippet
 
 context math(context)
-snippet lr| "large paremtheses" Ai
+snippet lr| "large bars" Ai
 \left| $0 \right|
 endsnippet
 
 context math(context)
-snippet lr{} "large paremtheses" Ai
-\left{ $0 \right}
+snippet lr{} "large braces" Ai
+\left\{ $0 \right\}
 endsnippet
 
 context math(context)
-snippet lr[] "large paremtheses" Ai
+snippet lr[] "large brackets" Ai
 \left[ $0 \right]
 endsnippet
 
 context math(context)
-snippet lr< "large paremtheses" Ai
+snippet lr< "large angle brackets" Ai
 \left< $0 \right>
 endsnippet
 
