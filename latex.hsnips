@@ -143,7 +143,7 @@ snippet `([a-zA-Z]),,` "slant bold style" Ai
 endsnippet
 
 context math(context)
-snippet bs "slant bold style" Ai
+snippet ,s "slant bold style" Ai
 \boldsymbol{$1}$0
 endsnippet
 
