@@ -93,8 +93,8 @@ e^{ $1 }$0
 endsnippet
 
 context math(context)
-snippet rm "roman" Ai
-\mathrm{$1}$0
+snippet `([^no])rm` "roman" Ai
+``rv = m[1]``\mathrm{$1}$0
 endsnippet
 
 context math(context)
