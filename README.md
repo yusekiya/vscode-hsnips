@@ -4,6 +4,11 @@ This repository provides snippet configurations for
 [HyperSnips extension](https://github.com/draivin/hsnips),
 which is a powerful snippet tool for Visual Studio Code (VSCode).
 
+## How to install
+
+1. Open a directory for HyperSnips with the command `HyperSnips: Open snippets directory`
+2. Make a copy (or a symbolic link) of snippet files of this repo in the directory
+
 
 ## LaTeX
 File: [latex.hsnips](./latex.hsnips)
